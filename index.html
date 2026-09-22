@@ -145,24 +145,24 @@
 <section class="slide" id="s4">
   <span class="tag humano reveal">Pilar · Humano + Seguro</span>
   <h2 class="reveal">Módulo de Guardias — Despliegue en piso</h2>
-  <p class="sub reveal">El software <b>identifica cada guardia</b>, asigna <b>coordinador dedicado</b> y personal exclusivo por posición. Guardias <b>rotativas según el flujo</b>, con refuerzo en los bloques de alta demanda.</p>
-  <div class="posgrid reveal">
-    <div class="pos"><b>Centro de Operaciones Orión L3</b><div class="m">Monitoreo del personal activo en tiempo real</div></div>
-    <div class="pos"><b>Centro de Mando AM</b><div class="m"><span class="c">1</span> coordinador</div></div>
-    <div class="pos"><b>Mostrador 39 · Bahía L3</b><div class="m"><span class="c">1</span> coord · <span class="c">10</span> colab (entrada + fila)</div></div>
-    <div class="pos"><b>Mostrador 1 · Bahía L2</b><div class="m"><span class="c">1</span> coord · <span class="c">10</span> colab (entrada + fila)</div></div>
-    <div class="pos"><b>Bahía L1 Premier</b><div class="m"><span class="c">1</span> coord · <span class="c">5</span> colab</div></div>
-    <div class="pos"><b>Filtros M y K</b><div class="m"><span class="c">1</span> coord · <span class="c">10–16</span> colab según flujo</div></div>
-    <div class="pos"><b>Abordaje · CAC Internacional</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
-    <div class="pos"><b>Abordaje · CAC Nacional</b><div class="m"><span class="c">1</span> coord · <span class="c">1–3</span> colab</div></div>
-    <div class="pos"><b>R1 a S-6 · Entrada 75-81</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
-    <div class="pos"><b>Conexión Internacional</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
-    <div class="pos"><b>Conexión Nacional</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
-    <div class="pos"><b>Dedo L 75-81 · PM/PRM</b><div class="m">Despliegue según demanda</div></div>
-    <div class="pos"><b>CAC Aerocares</b><div class="m"><span class="c">1</span> coord · <span class="c">12</span> colab</div></div>
-    <div class="pos"><b>Bloques de alta demanda</b><div class="m">Matutino 07:20–08:50 · Vespertino 13:30–15:30</div></div>
+  <p class="sub reveal">El software <b>identifica cada guardia</b> y asigna <b>coordinador dedicado</b> por posición, siguiendo el <b>recorrido del pasajero</b> — de documentación hasta abordaje. Guardias rotativas según el flujo, con refuerzo en los bloques de alta demanda.</p>
+  <div class="pos reveal" style="margin:1.4rem 0 .4rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+    <b style="color:var(--navy)">Centro de Operaciones Orión L3</b>
+    <span class="m" style="margin:0">Monitoreo en tiempo real del personal activo</span>
+    <span class="m" style="margin:0">· Centro de Mando AM: <span class="c">1</span> coordinador</span>
   </div>
-  <p class="sub reveal" style="font-size:.9rem;margin-top:1.2rem">Todos los coordinadores en posición operan con <b>dispositivos inteligentes</b>: registran y asignan servicios al momento.</p>
+  <div class="flow reveal" style="margin-top:1rem">
+    <div class="node"><b>1 · Documentación</b><p>Mostrador 39 · L3 — <span class="c">1</span>c · <span class="c">10</span> colab<br>Mostrador 1 · L2 — <span class="c">1</span>c · <span class="c">10</span> colab<br>Bahía L1 Premier — <span class="c">1</span>c · <span class="c">5</span> colab</p></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>2 · Filtros</b><p>Filtros M y K<br><span class="c">1</span>c · <span class="c">10–16</span> colab según flujo</p></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>3 · Conexiones</b><p>Internacional — <span class="c">1</span>c · <span class="c">3</span> colab<br>Nacional — <span class="c">1</span>c · <span class="c">3</span> colab</p></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>4 · Abordaje</b><p>CAC Internacional — <span class="c">1</span>c · <span class="c">3</span><br>CAC Nacional — <span class="c">1</span>c · <span class="c">1–3</span><br>R1 a S-6 (75-81) — <span class="c">1</span>c · <span class="c">3</span><br>Dedo L · PM/PRM — según demanda</p></div>
+    <div class="arrow">→</div>
+    <div class="node"><b>5 · Asistencia especial</b><p>CAC Aerocares<br><span class="c">1</span>c · <span class="c">12</span> colab</p></div>
+  </div>
+  <p class="sub reveal" style="font-size:.9rem;margin-top:1.2rem"><b>Refuerzo en bloques de alta demanda:</b> matutino 07:20–08:50 · vespertino 13:30–15:30. Todos los coordinadores operan con <b>dispositivos inteligentes</b>: registran y asignan servicios al momento.</p>
   <div class="foot"><span>Módulo de Guardias · Despliegue</span><span>04</span></div>
 </section>
 
@@ -181,12 +181,10 @@
     <div class="bar"><div class="fill" style="--h:52%"><span class="v">23</span><span class="x">18:00</span></div></div>
   </div>
   <p class="sub reveal" style="font-size:.85rem;margin-top:2.6rem">Sillas de <b>llegada</b> solicitadas por franja de 30 min · promedio diario · Estación MEXT2.</p>
-  <div class="flow reveal" style="margin-top:1.8rem">
-    <div class="node"><b style="color:var(--navy)">Llega el pico</b><p>Hasta <b style="color:var(--navy);font-size:1.3rem">63 sillas</b> solicitadas en una sola franja de 30 min (19-sep · 15:00).</p></div>
-    <div class="arrow">→</div>
-    <div class="node"><b style="color:var(--coral)">No alcanzan las manos</b><p>Solo <b style="color:var(--coral);font-size:1.3rem">15–20</b> operadores libres en el pico → los demás siguen amarrados a un servicio.</p></div>
-    <div class="arrow">→</div>
-    <div class="node"><b style="color:var(--teal)">Entra la guardia</b><p>Refuerzo de <b style="color:var(--teal);font-size:1.3rem">+45</b> operadores en la banda 11:00–16:00 que absorbe la simultaneidad.</p></div>
+  <div class="grid reveal" style="margin-top:1.6rem">
+    <div class="card navyc"><div class="num">63</div><div class="lbl">Sillas pico en una sola franja de 30 min (19-sep · 15:00)</div></div>
+    <div class="card"><div class="num" style="color:var(--coral)">15–20</div><div class="lbl">Operadores libres para responder en el pico de la tarde</div></div>
+    <div class="card accent"><div class="num">+45</div><div class="lbl">Guardia de refuerzo requerida · banda 11:00–16:00</div></div>
   </div>
   <div class="foot"><span>Dimensionamiento de guardias · demanda de llegadas</span><span>05</span></div>
 </section>
