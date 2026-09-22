@@ -77,6 +77,11 @@
   .flow .arrow{display:flex;align-items:center;color:var(--coral);font-size:1.6rem;font-weight:800}
   @media(max-width:820px){.flow{flex-direction:column}.flow .arrow{transform:rotate(90deg);justify-content:center}}
   .badge{display:inline-block;background:#FFF4E5;color:#B26A00;font-weight:700;font-size:.8rem;padding:.35rem .8rem;border-radius:999px;margin-top:1.4rem}
+  .posgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;margin-top:1.6rem}
+  .pos{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.85rem 1rem;box-shadow:0 4px 16px rgba(10,30,63,.04)}
+  .pos b{display:block;color:var(--navy);font-size:.95rem;line-height:1.2}
+  .pos .m{color:var(--mut);font-size:.85rem;margin-top:.3rem;font-weight:600;line-height:1.35}
+  .pos .c{color:var(--teal);font-weight:800}
   .cta{color:#fff;background:linear-gradient(135deg,#08152B,#0A1E3F 45%,#1C3E7A 100%);background-size:200% 200%;animation:grad 14s ease infinite}
   .cta h2{color:#fff}.cta .sub{color:#C3D1EA}
   .prog{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--teal),var(--coral));z-index:99;transition:width .1s}
@@ -106,14 +111,13 @@
 <!-- 2 CONTEXTO -->
 <section class="slide" id="s2">
   <div class="kicker reveal">Los avances del trimestre</div>
-  <h2 class="reveal">Cinco implementaciones, cuatro pilares</h2>
+  <h2 class="reveal">Cuatro implementaciones, cuatro pilares</h2>
   <p class="sub reveal">Todo lo presentado hoy ya está <b>en producción</b> y respaldado por datos reales de la operación de Aeroméxico.</p>
   <div class="grid reveal">
-    <div class="card"><div class="num" style="color:var(--coral)">01</div><div class="lbl">Mantenimiento y Refacciones</div></div>
-    <div class="card"><div class="num" style="color:var(--teal)">02</div><div class="lbl">Módulo de Guardias</div></div>
-    <div class="card"><div class="num" style="color:#2647A6">03</div><div class="lbl">Mostrador por bahía</div></div>
-    <div class="card"><div class="num" style="color:var(--navy)">04</div><div class="lbl">Cancún al 100%</div></div>
-    <div class="card"><div class="num" style="color:var(--coral)">05</div><div class="lbl">Bot de Soporte Nacional</div></div>
+    <div class="card"><div class="num" style="color:var(--teal)">01</div><div class="lbl">Módulo de Guardias</div></div>
+    <div class="card"><div class="num" style="color:#2647A6">02</div><div class="lbl">Mostrador por bahía</div></div>
+    <div class="card"><div class="num" style="color:var(--coral)">03</div><div class="lbl">Mantenimiento y Refacciones</div></div>
+    <div class="card"><div class="num" style="color:var(--navy)">04</div><div class="lbl">Red Nacional Conectada</div></div>
   </div>
   <div class="foot"><span>Avances Sep 2026</span><span>02</span></div>
 </section>
@@ -132,56 +136,33 @@
   <div class="foot"><span>El trimestre en números · Dashboard AM</span><span>03</span></div>
 </section>
 
-<!-- 4 MANTENIMIENTO -->
+<!-- 4 GUARDIAS -->
 <section class="slide" id="s4">
-  <span class="tag seguro reveal">Pilar · Seguro</span>
-  <div class="feat">
-    <div class="reveal">
-      <h2>Control de Mantenimiento y Refacciones</h2>
-      <p class="sub">Nuevo sistema para gestionar el mantenimiento y las refacciones de <b>sillas de ruedas</b> y <b>dispositivos Handheld</b>, con historial por equipo.</p>
-      <ul class="pts">
-        <li>Cada equipo con expediente: estado, refacción usada, técnico y fecha.</li>
-        <li>Evidencia fotográfica antes/después de cada intervención.</li>
-        <li>Control de inventario de refacciones con stock mínimo y alertas.</li>
-      </ul>
-      <div class="value"><span class="h">Beneficio Aeroméxico</span><b>Menos fallas en piso, equipos confiables para el pasajero, vida útil extendida y evidencia auditable</b> de cada intervención.</div>
-    </div>
-    <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
-      <div class="card"><div class="num" style="color:var(--coral)">281</div><div class="lbl">Mantenimientos registrados</div></div>
-      <div class="card"><div class="num" style="color:var(--navy)">182</div><div class="lbl">Equipos en catálogo</div></div>
-      <div class="card"><div class="num" style="color:var(--teal)">27</div><div class="lbl">Refacciones controladas</div></div>
-      <div class="card"><div class="num" style="color:var(--navy)">305</div><div class="lbl">Movimientos de inventario</div></div>
-    </div>
-  </div>
-  <div class="foot"><span>Control de Mantenimiento</span><span>04</span></div>
-</section>
-
-<!-- 5 GUARDIAS -->
-<section class="slide" id="s5">
   <span class="tag humano reveal">Pilar · Humano + Seguro</span>
-  <div class="feat">
-    <div class="reveal">
-      <h2>Módulo de Guardias</h2>
-      <p class="sub">Actualización de software que <b>identifica las guardias</b>, asigna un <b>coordinador dedicado</b> y <b>personal exclusivo</b> por turno.</p>
-      <ul class="pts">
-        <li>Posiciones de guardia definidas con cupo de operadores por turno.</li>
-        <li>Coordinador responsable asignado a cada guardia.</li>
-        <li>Trazabilidad de asignación / desasignación y estatus en vivo.</li>
-      </ul>
-      <div class="value"><span class="h">Beneficio Aeroméxico</span><b>Cobertura garantizada en horarios críticos, responsabilidad clara y cero vacíos de mando</b> en los momentos más sensibles de la operación.</div>
-    </div>
-    <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
-      <div class="card"><div class="num" style="color:var(--teal)">28</div><div class="lbl">Guardias en catálogo</div></div>
-      <div class="card"><div class="num" style="color:var(--navy)">12</div><div class="lbl">Posiciones configuradas</div></div>
-      <div class="card"><div class="num" style="color:var(--coral)">125</div><div class="lbl">Asignaciones de personal</div></div>
-      <div class="card"><div class="num" style="color:var(--navy)">1×</div><div class="lbl">Coordinador dedicado por guardia</div></div>
-    </div>
+  <h2 class="reveal">Módulo de Guardias — Despliegue en piso</h2>
+  <p class="sub reveal">El software <b>identifica cada guardia</b>, asigna <b>coordinador dedicado</b> y personal exclusivo por posición. Guardias <b>rotativas según el flujo</b>, con refuerzo en los bloques de alta demanda.</p>
+  <div class="posgrid reveal">
+    <div class="pos"><b>Centro de Operaciones Orión L3</b><div class="m">Monitoreo del personal activo en tiempo real</div></div>
+    <div class="pos"><b>Centro de Mando AM</b><div class="m"><span class="c">1</span> coordinador</div></div>
+    <div class="pos"><b>Mostrador 39 · Bahía L3</b><div class="m"><span class="c">1</span> coord · <span class="c">10</span> colab (entrada + fila)</div></div>
+    <div class="pos"><b>Mostrador 1 · Bahía L2</b><div class="m"><span class="c">1</span> coord · <span class="c">10</span> colab (entrada + fila)</div></div>
+    <div class="pos"><b>Bahía L1 Premier</b><div class="m"><span class="c">1</span> coord · <span class="c">5</span> colab</div></div>
+    <div class="pos"><b>Filtros M y K</b><div class="m"><span class="c">1</span> coord · <span class="c">10–16</span> colab según flujo</div></div>
+    <div class="pos"><b>Abordaje · CAC Internacional</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
+    <div class="pos"><b>Abordaje · CAC Nacional</b><div class="m"><span class="c">1</span> coord · <span class="c">1–3</span> colab</div></div>
+    <div class="pos"><b>R1 a S-6 · Entrada 75-81</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
+    <div class="pos"><b>Conexión Internacional</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
+    <div class="pos"><b>Conexión Nacional</b><div class="m"><span class="c">1</span> coord · <span class="c">3</span> colab</div></div>
+    <div class="pos"><b>Dedo L 75-81 · PM/PRM</b><div class="m">Despliegue según demanda</div></div>
+    <div class="pos"><b>CAC Aerocares</b><div class="m"><span class="c">1</span> coord · <span class="c">12</span> colab</div></div>
+    <div class="pos"><b>Bloques de alta demanda</b><div class="m">Matutino 07:20–08:50 · Vespertino 13:30–15:30</div></div>
   </div>
-  <div class="foot"><span>Módulo de Guardias</span><span>05</span></div>
+  <p class="sub reveal" style="font-size:.9rem;margin-top:1.2rem">Todos los coordinadores en posición operan con <b>dispositivos inteligentes</b>: registran y asignan servicios al momento.</p>
+  <div class="foot"><span>Módulo de Guardias · Despliegue</span><span>04</span></div>
 </section>
 
-<!-- 6 MOSTRADOR (SALIDAS) -->
-<section class="slide" id="s6">
+<!-- 5 MOSTRADOR (SALIDAS) -->
+<section class="slide" id="s5">
   <span class="tag medible reveal">Pilar · Medible + Humano</span>
   <div class="feat">
     <div class="reveal">
@@ -201,56 +182,77 @@
       <div class="card"><div class="num" style="color:var(--coral)">1×bahía</div><div class="lbl">Mostrador dedicado por posición</div></div>
     </div>
   </div>
-  <div class="foot"><span>Mostrador por bahía · salidas</span><span>06</span></div>
+  <div class="foot"><span>Mostrador por bahía · salidas</span><span>05</span></div>
 </section>
 
-<!-- 7 CANCUN -->
+<!-- 6 MANTENIMIENTO -->
+<section class="slide" id="s6">
+  <span class="tag seguro reveal">Pilar · Seguro</span>
+  <div class="feat">
+    <div class="reveal">
+      <h2>Control de Mantenimiento y Refacciones</h2>
+      <p class="sub">Nuevo sistema para gestionar el mantenimiento y las refacciones de <b>sillas de ruedas</b> y <b>dispositivos Handheld</b>, con historial por equipo.</p>
+      <ul class="pts">
+        <li>Cada equipo con expediente: estado, refacción usada, técnico y fecha.</li>
+        <li>Evidencia fotográfica antes/después de cada intervención.</li>
+        <li>Control de inventario de refacciones con stock mínimo y alertas.</li>
+      </ul>
+      <div class="value"><span class="h">Beneficio Aeroméxico</span><b>Menos fallas en piso, equipos confiables para el pasajero, vida útil extendida y evidencia auditable</b> de cada intervención.</div>
+    </div>
+    <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
+      <div class="card"><div class="num" style="color:var(--coral)">281</div><div class="lbl">Mantenimientos registrados</div></div>
+      <div class="card"><div class="num" style="color:var(--navy)">182</div><div class="lbl">Equipos en catálogo</div></div>
+      <div class="card"><div class="num" style="color:var(--teal)">27</div><div class="lbl">Refacciones controladas</div></div>
+      <div class="card"><div class="num" style="color:var(--navy)">305</div><div class="lbl">Movimientos de inventario</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>Control de Mantenimiento</span><span>06</span></div>
+</section>
+
+<!-- 7 ESTACIONES CONECTADAS -->
 <section class="slide" id="s7">
   <span class="tag tec reveal">Pilar · Tecnológico</span>
   <div class="feat">
     <div class="reveal">
-      <h2>Estación Cancún al 100%</h2>
-      <p class="sub">Despliegue completo del ecosistema (Mintaka + Mantenimiento) en <b>CUN</b>, con el mismo estándar de control que MEX.</p>
+      <h2>Red Nacional Conectada</h2>
+      <p class="sub">Las <b>5 estaciones</b> comparten la información de cada servicio en tiempo real. Un pasajero que viaja de una estación a otra conserva el <b>mismo expediente</b>, asegurando un <b>servicio completo de punta a punta</b>.</p>
       <ul class="pts">
-        <li>Segunda estación de alto tráfico operando con la plataforma completa.</li>
-        <li>Mismo control de servicios, guardias y equipos que en Ciudad de México.</li>
-        <li>Cobertura nacional creciendo: 5 estaciones activas.</li>
+        <li>Expediente único: origen, conexión y destino ven el mismo servicio.</li>
+        <li>El servicio de silla se entrega sin cortes entre estaciones.</li>
+        <li>Cobertura nacional: MEX · GDL · CUN · MTY · PVR.</li>
       </ul>
-      <div class="value"><span class="h">Beneficio Aeroméxico</span><b>Estandarización nacional del servicio</b>: la calidad y trazabilidad de MEX ahora también en el principal destino turístico.</div>
+      <div class="value"><span class="h">Beneficio Aeroméxico</span><b>Continuidad garantizada del servicio en vuelos con conexión</b> — ninguna estación pierde el hilo del pasajero.</div>
     </div>
-    <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
-      <div class="card tealc"><div class="num">100%</div><div class="lbl">Sistema desplegado en CUN</div></div>
-      <div class="card"><div class="num" style="color:var(--navy)">3,268</div><div class="lbl">Servicios AM en CUN (trimestre)</div></div>
-      <div class="card"><div class="num" style="color:var(--coral)">5</div><div class="lbl">Estaciones AM activas</div></div>
-      <div class="card navyc"><div class="num" style="font-size:1.4rem;line-height:1.2">MEX·GDL<br>CUN·MTY·PVR</div><div class="lbl">Red nacional</div></div>
+    <div class="reveal" style="display:flex;justify-content:center;align-items:center">
+      <svg viewBox="0 0 460 400" width="100%" style="max-width:440px" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#00B2C4" stroke-width="2" opacity=".55">
+          <line x1="230" y1="55" x2="353.6" y2="144.8"/>
+          <line x1="353.6" y1="144.8" x2="306.4" y2="290.2"/>
+          <line x1="306.4" y1="290.2" x2="153.6" y2="290.2"/>
+          <line x1="153.6" y1="290.2" x2="106.4" y2="144.8"/>
+          <line x1="106.4" y1="144.8" x2="230" y2="55"/>
+        </g>
+        <g stroke="#C6D0E2" stroke-width="1.5" stroke-dasharray="4 4">
+          <line x1="230" y1="185" x2="230" y2="55"/>
+          <line x1="230" y1="185" x2="353.6" y2="144.8"/>
+          <line x1="230" y1="185" x2="306.4" y2="290.2"/>
+          <line x1="230" y1="185" x2="153.6" y2="290.2"/>
+          <line x1="230" y1="185" x2="106.4" y2="144.8"/>
+        </g>
+        <g font-family="-apple-system,Segoe UI,Roboto,sans-serif" font-weight="800" text-anchor="middle">
+          <circle cx="230" cy="55" r="34" fill="#122C57"/><text x="230" y="60" fill="#fff" font-size="15">MEX</text>
+          <circle cx="353.6" cy="144.8" r="34" fill="#122C57"/><text x="353.6" y="149.8" fill="#fff" font-size="15">CUN</text>
+          <circle cx="306.4" cy="290.2" r="34" fill="#122C57"/><text x="306.4" y="295.2" fill="#fff" font-size="15">MTY</text>
+          <circle cx="153.6" cy="290.2" r="34" fill="#122C57"/><text x="153.6" y="295.2" fill="#fff" font-size="15">PVR</text>
+          <circle cx="106.4" cy="144.8" r="34" fill="#122C57"/><text x="106.4" y="149.8" fill="#fff" font-size="15">GDL</text>
+          <circle cx="230" cy="185" r="47" fill="#F0047F"/>
+          <text x="230" y="181" fill="#fff" font-size="12.5">Expediente</text>
+          <text x="230" y="197" fill="#fff" font-size="12.5">único</text>
+        </g>
+      </svg>
     </div>
   </div>
-  <div class="foot"><span>Cancún · Despliegue nacional</span><span>07</span></div>
-</section>
-
-<!-- 8 BOT SOPORTE -->
-<section class="slide" id="s8">
-  <span class="tag medible reveal">Pilar · Medible</span>
-  <div class="feat">
-    <div class="reveal">
-      <h2>Bot de Soporte Nacional</h2>
-      <p class="sub">Asistente que da <b>seguimiento a las incidencias diarias a nivel nacional</b> y <b>documenta las minutas</b> de la operación, desde el reporte hasta el cierre.</p>
-      <ul class="pts">
-        <li>Captura estructurada: quién reporta, equipo, número de serie, hora y descripción.</li>
-        <li>Genera y da seguimiento a las <b>minutas</b>: acuerdos, responsables y pendientes.</li>
-        <li>Enriquecimiento automático de la serie del dispositivo y notificación al responsable.</li>
-        <li>Ciclo de vida completo del ticket: abierto → seguimiento → cerrado.</li>
-      </ul>
-      <div class="value"><span class="h">Beneficio Aeroméxico</span><b>Nada se pierde: incidencias y acuerdos con seguimiento, respuesta más rápida y visibilidad de recurrencias</b> para atacar la causa raíz.</div>
-    </div>
-    <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
-      <div class="card accent"><div class="num">100%</div><div class="lbl">Tickets cerrados</div></div>
-      <div class="card"><div class="num" style="color:var(--navy)">15</div><div class="lbl">Incidencias gestionadas</div></div>
-      <div class="card tealc"><div class="num">24/7</div><div class="lbl">Cobertura nacional</div></div>
-      <div class="card"><div class="num" style="color:var(--coral)">+Minutas</div><div class="lbl">Acuerdos con seguimiento</div></div>
-    </div>
-  </div>
-  <div class="foot"><span>Bot de Soporte Nacional</span><span>08</span></div>
+  <div class="foot"><span>Red Nacional · Estaciones conectadas</span><span>07</span></div>
 </section>
 
 <!-- 9 INTEGRACION TRANSFORMACION DIGITAL -->
@@ -271,7 +273,7 @@
     <div class="value"><span class="h">Beneficio Aeroméxico</span><b>El servicio se planea desde que el pasajero lo solicita</b> — sin capturas manuales, sin pérdidas, con la reserva integrada de punta a punta.</div>
     <span class="badge reveal">Instancia desarrollada y probada de nuestro lado · en espera de la respuesta de su equipo</span>
   </div>
-  <div class="foot"><span>Integración · Transformación Digital</span><span>09</span></div>
+  <div class="foot"><span>Integración · Transformación Digital</span><span>08</span></div>
 </section>
 
 <!-- 10 ACCESOS / DEMO -->
@@ -291,15 +293,15 @@
       <p style="margin-top:.8rem"><a href="https://mantenimiento.orionadministracion.com/">mantenimiento.orionadministracion.com</a></p>
     </div>
   </div>
-  <div class="foot"><span>Demo en vivo</span><span>10</span></div>
+  <div class="foot"><span>Demo en vivo</span><span>09</span></div>
 </section>
 
 <!-- 11 CIERRE -->
 <section class="slide cta" id="s11">
   <div class="brandrow reveal">ORIÓN <span class="x">×</span> AEROMÉXICO</div>
   <h2 class="reveal">Seguimos construyendo el servicio más<br>seguro, humano, medible y tecnológico</h2>
-  <p class="sub reveal">Cinco implementaciones nuevas en producción, respaldadas por más de 100,000 servicios atendidos este trimestre. Gracias.</p>
-  <div class="foot"><span>Grupo Orión · Septiembre 2026</span><span>11</span></div>
+  <p class="sub reveal">Cuatro implementaciones nuevas en producción, respaldadas por más de 100,000 servicios atendidos este trimestre. Gracias.</p>
+  <div class="foot"><span>Grupo Orión · Septiembre 2026</span><span>10</span></div>
 </section>
 
 </div>
