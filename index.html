@@ -79,6 +79,10 @@
   .flow .node{flex:1;min-width:150px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.2rem;box-shadow:0 6px 24px rgba(10,30,63,.05)}
   .flow .node b{display:block;color:var(--navy);font-size:1.02rem}
   .flow .node p{color:var(--mut);font-size:.9rem;margin-top:.3rem}
+  .flow .node .fp{padding:.5rem 0;border-top:1px solid var(--line)}
+  .flow .node .fp:first-of-type{border-top:none}
+  .flow .node .fp .pn{display:block;color:var(--navy);font-weight:700;font-size:.98rem;line-height:1.25}
+  .flow .node .fp .pd{display:block;color:var(--mut);font-size:.92rem;margin-top:.15rem;line-height:1.3}
   .flow .arrow{display:flex;align-items:center;color:var(--coral);font-size:1.6rem;font-weight:800}
   @media(max-width:820px){.flow{flex-direction:column}.flow .arrow{transform:rotate(90deg);justify-content:center}}
   .badge{display:inline-block;background:#FFF4E5;color:#B26A00;font-weight:700;font-size:.8rem;padding:.35rem .8rem;border-radius:999px;margin-top:1.4rem}
@@ -152,15 +156,31 @@
     <span class="m" style="margin:0">· Centro de Mando AM: <span class="c">1</span> coordinador</span>
   </div>
   <div class="flow reveal" style="margin-top:1rem">
-    <div class="node"><b>1 · Documentación</b><p>Mostrador 39 · L3 — <span class="c">1</span>c · <span class="c">10</span> colab<br>Mostrador 1 · L2 — <span class="c">1</span>c · <span class="c">10</span> colab<br>Bahía L1 Premier — <span class="c">1</span>c · <span class="c">5</span> colab</p></div>
+    <div class="node"><b style="font-size:1.08rem;margin-bottom:.7rem">1 · Documentación</b>
+      <div class="fp"><span class="pn">Mostrador 39 · L3</span><span class="pd"><span class="c">1</span> coord · <span class="c">10</span> colab</span></div>
+      <div class="fp"><span class="pn">Mostrador 1 · L2</span><span class="pd"><span class="c">1</span> coord · <span class="c">10</span> colab</span></div>
+      <div class="fp"><span class="pn">Bahía L1 Premier</span><span class="pd"><span class="c">1</span> coord · <span class="c">5</span> colab</span></div>
+    </div>
     <div class="arrow">→</div>
-    <div class="node"><b>2 · Filtros</b><p>Filtros M y K<br><span class="c">1</span>c · <span class="c">10–16</span> colab según flujo</p></div>
+    <div class="node"><b style="font-size:1.08rem;margin-bottom:.7rem">2 · Filtros</b>
+      <div class="fp"><span class="pn">Filtros M y K</span><span class="pd"><span class="c">1</span> coord · <span class="c">10–16</span> colab según flujo</span></div>
+    </div>
     <div class="arrow">→</div>
-    <div class="node"><b>3 · Conexiones</b><p>Internacional — <span class="c">1</span>c · <span class="c">3</span> colab<br>Nacional — <span class="c">1</span>c · <span class="c">3</span> colab</p></div>
+    <div class="node"><b style="font-size:1.08rem;margin-bottom:.7rem">3 · Conexiones</b>
+      <div class="fp"><span class="pn">Internacional</span><span class="pd"><span class="c">1</span> coord · <span class="c">3</span> colab</span></div>
+      <div class="fp"><span class="pn">Nacional</span><span class="pd"><span class="c">1</span> coord · <span class="c">3</span> colab</span></div>
+    </div>
     <div class="arrow">→</div>
-    <div class="node"><b>4 · Abordaje</b><p>CAC Internacional — <span class="c">1</span>c · <span class="c">3</span><br>CAC Nacional — <span class="c">1</span>c · <span class="c">1–3</span><br>R1 a S-6 (75-81) — <span class="c">1</span>c · <span class="c">3</span><br>Dedo L · PM/PRM — según demanda</p></div>
+    <div class="node"><b style="font-size:1.08rem;margin-bottom:.7rem">4 · Abordaje</b>
+      <div class="fp"><span class="pn">CAC Internacional</span><span class="pd"><span class="c">1</span> coord · <span class="c">3</span> colab</span></div>
+      <div class="fp"><span class="pn">CAC Nacional</span><span class="pd"><span class="c">1</span> coord · <span class="c">1–3</span> colab</span></div>
+      <div class="fp"><span class="pn">R1 a S-6 (75-81)</span><span class="pd"><span class="c">1</span> coord · <span class="c">3</span> colab</span></div>
+      <div class="fp"><span class="pn">Dedo L · PM/PRM</span><span class="pd">según demanda</span></div>
+    </div>
     <div class="arrow">→</div>
-    <div class="node"><b>5 · Asistencia especial</b><p>CAC Aerocares<br><span class="c">1</span>c · <span class="c">12</span> colab</p></div>
+    <div class="node"><b style="font-size:1.08rem;margin-bottom:.7rem">5 · Asistencia especial</b>
+      <div class="fp"><span class="pn">CAC Aerocares</span><span class="pd"><span class="c">1</span> coord · <span class="c">12</span> colab</span></div>
+    </div>
   </div>
   <p class="sub reveal" style="font-size:.9rem;margin-top:1.2rem"><b>Refuerzo en bloques de alta demanda:</b> matutino 07:20–08:50 · vespertino 13:30–15:30. Todos los coordinadores operan con <b>dispositivos inteligentes</b>: registran y asignan servicios al momento.</p>
   <div class="foot"><span>Módulo de Guardias · Despliegue</span><span>04</span></div>
