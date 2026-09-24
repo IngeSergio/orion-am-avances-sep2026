@@ -6,7 +6,7 @@
 <title>Orión × Aeroméxico — Avances Sep 2026</title>
 <style>
   :root{
-    --navy:#0A1E3F; --navy2:#122C57; --coral:#F0047F; --teal:#00B2C4;
+    --navy:#0A1E3F; --navy2:#122C57; --coral:#F0047F; --teal:#00B2C4; --green:#16A34A;
     --ink:#0A1E3F; --mut:#5A6B85; --bg:#F5F7FB; --card:#FFFFFF; --line:#E3E8F2;
   }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -55,6 +55,8 @@
   .card.accent .lbl{color:#FCE0EE}
   .card.tealc{background:linear-gradient(135deg,var(--teal),#0090A0);color:#fff;border:none}
   .card.tealc .lbl{color:#DDF6F9}
+  .card.greenc{background:linear-gradient(135deg,var(--green),#0E7A37);color:#fff;border:none}
+  .card.greenc .lbl{color:#DCF5E5}
   .card.navyc{background:linear-gradient(135deg,var(--navy),#1C3E7A);color:#fff;border:none}
   .card.navyc .lbl{color:#C3D1EA}
   .feat{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center}
@@ -140,8 +142,8 @@
   <h2 class="reveal">Operación medible, a escala</h2>
   <p class="sub reveal">La operación de <b>Aeroméxico</b> en la estación de Ciudad de México, del <b>1 de julio al 21 de septiembre de 2026</b>.</p>
   <div class="grid reveal">
-    <div class="card accent"><div class="num">102,363</div><div class="lbl">Servicios efectivos (85.5%)<br>pasajeros atendidos y concluidos</div></div>
     <div class="card navyc"><div class="num">119,681</div><div class="lbl">Servicios gestionados<br>en el periodo</div></div>
+    <div class="card accent"><div class="num">102,363</div><div class="lbl">Servicios efectivos (85.5%)<br>pasajeros atendidos y concluidos</div></div>
     <div class="card"><div class="num" style="color:var(--coral)">14.5%</div><div class="lbl">No-show<br>pasajero que no se presentó</div></div>
   </div>
   <p class="sub reveal" style="font-size:.9rem;margin-top:1.6rem">Fuente: Dashboard ejecutivo Aeroméxico · Estación MEXT2.</p>
@@ -230,7 +232,7 @@
     <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
       <div class="card"><div class="num" style="color:var(--navy)">11.7%</div><div class="lbl">No-show <b>sin mostrador</b></div></div>
       <div class="card accent"><div class="num">4.2%</div><div class="lbl">No-show en salidas atendidas <b>con mostrador</b></div></div>
-      <div class="card tealc"><div class="num">−64%</div><div class="lbl">Reducción relativa del no-show con mostrador</div></div>
+      <div class="card greenc"><div class="num">−64%</div><div class="lbl">Reducción relativa del no-show con mostrador</div></div>
       <div class="card"><div class="num" style="color:var(--coral)">1×bahía</div><div class="lbl">Mostrador dedicado por posición</div></div>
     </div>
   </div>
@@ -386,7 +388,7 @@
     <div class="grid reveal" style="grid-template-columns:1fr 1fr;margin-top:0">
       <div class="card"><div class="num" style="color:var(--navy)">11.7%</div><div class="lbl">Sin mostrador<br>no-show en salidas</div></div>
       <div class="card accent"><div class="num">4.2%</div><div class="lbl">Con mostrador<br>no-show en salidas</div></div>
-      <div class="card tealc"><div class="num">−64%</div><div class="lbl">Reducción relativa<br>(11.7 − 4.2) ÷ 11.7</div></div>
+      <div class="card greenc"><div class="num">−64%</div><div class="lbl">Reducción relativa<br>(11.7 − 4.2) ÷ 11.7</div></div>
       <div class="card"><div class="num" style="color:var(--coral)">1:1</div><div class="lbl">Definición y periodo<br>idénticos entre cohortes</div></div>
     </div>
   </div>
